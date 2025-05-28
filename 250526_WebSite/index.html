@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yohta's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="main-content">
+    <img src="images/hajimemashite.png" alt="はじめまして、北川陽太です。" class="greeting-image">
+        <p>
+            北川陽太です。
+            <br>
+            自己紹介のサイトを作ってみることにしました。自己紹介といっても、これまでやってきたことをぞろぞろと書いても寂しいので、会話を模してちょっとインタラクティブにしたサイトにしてみました。
+            <br>
+            下のチャットボックスを使ってみてください。
+        </p>
+    <div class="scroller" data-speed="slow">
+        <ul class="tag-list scroller-inner">
+            <li><img src="images/pic1.jpg" alt="ギャラリー画像1"></li>
+            <li><img src="images/pic2.jpg" alt="ギャラリー画像2"></li>
+            <li><img src="images/pic3.jpg" alt="ギャラリー画像3"></li>
+            <li><img src="images/pic4.jpg" alt="ギャラリー画像4"></li>
+            <li><img src="images/pic5.jpg" alt="ギャラリー画像5"></li>
+        </ul>
+    </div>
+    </main>
+
+<footer class="chat-box">
+    <nav class="topic-selector">
+        <a href="#" data-text="出身は？" data-url="shusshin.html">出身は？</a>       
+        <a href="#" data-text="どんなお勉強をしてるの？" data-url="obenkyo.html">どんなお勉強をしてるの？</a>
+        <a href="#" data-text="趣味は？" data-url="shumi.html">趣味は？</a>
+        <a href="#" data-text="近況をききたい！" data-url="kinkyo.html">近況をききたい！</a>
+    </nav>
+
+    <div class="chat-input-area">
+        <span class="input-placeholder" id="input-placeholder">興味のあるトピックを選択、もしくはコメントをタイプしてください</span>
+        <input type="text" id="text-input" class="text-input" style="display: none;">
+        <div class="send-button" id="send-button">
+            
+            <img src="images/send.png" alt="送信" class="send-button-icon">
+            
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+    <a href="monooki.html" class="monooki-link"></a>
+    <audio id="box-sound" src="audio/box-sound.mp3" preload="auto"></audio>
+</body>
+</html>
